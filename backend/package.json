@@ -19,8 +19,11 @@
     "express-rate-limit": "^5.2.6",
     "helmet": "^4.6.0",
     "jsonwebtoken": "^8.5.1",
+    "mic": "^2.1.2",
     "mongoose": "^5.12.7",
     "nodemon": "^2.0.7",
-    "socket.io": "^4.0.1"
+    "openai": "^4.29.1",
+    "socket.io": "^4.0.1",
+    "sox": "^0.1.0"
   }
 }

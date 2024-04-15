@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- Add code editor library, e.g., CodeMirror -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/codemirror.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/codemirror.min.js"></script>
+</head>
+<body>
+
+
+<h1>AI Coding Assistant</h1>
+<div id="editor"></div>
+<button onclick="submitCode()">Submit Code</button>
+<div id="question-container"></div>
+
+
+</body>
+
+<script>
+    const socket = io();
+  
+    const editor = CodeMirror(document.getElementById('editor'), {
+      lineNumbers: true,
+      mode: 'javascript', // Set the appropriate code language
+    });
+  
+    function submitCode() {
+      const code = editor.getValue();
+      socket.emit('code', code);
+    }
+  
+    socket.on('malicious', (message) => {
+      alert(message);
+      // You can take additional actions based on malicious activity detection
+    });
+  
+    socket.on('question', (question) => {
+      document.getElementById('question-container').innerText = question;
+    });
+  </script>
+</html>

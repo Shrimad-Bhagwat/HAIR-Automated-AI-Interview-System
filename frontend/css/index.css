@@ -698,3 +698,51 @@ textarea{
   color: white; /* Change the text color as needed */
   /* Add any other styles for the solved state */
 }
+
+.interview{
+  flex-direction: column;
+  /* justify-content: center; */
+  padding:1% 5%;
+  /* height:100vh; */
+}
+
+.interview>h2{
+  text-align: left !important;
+    width: 100%;
+    font-size: 30;
+}
+
+.interview>button{
+  font-size: medium;
+  font-weight: 400;
+  /* float: right; */
+  margin: 5px;
+  background: rgba(34, 123, 224, 0.5);
+  /* border: none;
+  outline: none; */
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 6px 12px;
+}
+
+.inter-panel{
+  display: flex;
+  float: right;
+  width: 40%;
+  margin: 15px;
+  flex-direction: column;
+}
+
+.inter-panel>button{
+  font-size: medium;
+  font-weight: 600;
+  /* float: right; */
+  margin: 5px;
+  background: rgba(34, 123, 224, 0.5);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 6px 12px;
+}
+

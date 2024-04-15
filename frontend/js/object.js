@@ -13,7 +13,6 @@ cocoSsd.load().then(function (res) {
     $("#upload_btn_div>a").removeClass('disabled')
     $("#web-cam-btn>a").removeClass('disabled')
 }, function () {
-    //failure
     console.log('loading tf model failed')
     $("#upload_btn_div").attr('title', 'Failed to load tf model in browser')
     $("#web-cam-btn").attr('title', 'Failed to load tf model in browser')
@@ -219,8 +218,3 @@ function load_webcam() {
         })
 }
 
-
-// function show(value){
-//      document.getElementById("displayobject").innerHTML(`<h3>${value}<h3>`)
-
-// }
