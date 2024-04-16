@@ -729,10 +729,27 @@ textarea{
   display: flex;
   float: right;
   width: 40%;
-  margin: 15px;
+  margin: 4% 10%;
   flex-direction: column;
 }
 
+.inter-panel>div>button{
+  font-size: medium;
+  font-weight: 600;
+  /* float: right; */
+  margin: 5px;
+  background: rgba(34, 123, 224, 0.5);
+  border: none;
+  outline: none;
+  width: 200px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 6px 12px;
+}
+.inter-panel{
+  justify-content: center;
+  align-items: center;
+}
 .inter-panel>button{
   font-size: medium;
   font-weight: 600;
@@ -741,8 +758,12 @@ textarea{
   background: rgba(34, 123, 224, 0.5);
   border: none;
   outline: none;
+  width: 200px;
   cursor: pointer;
   border-radius: 5px;
   padding: 6px 12px;
 }
 
+#disabled{
+  opacity: 0.2;
+}
