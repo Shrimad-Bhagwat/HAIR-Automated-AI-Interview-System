@@ -18,7 +18,7 @@ function register() {
         password: document.getElementById('password').value
     }
     var xh = new XMLHttpRequest();
-    xh.open("POST", "http://localhost:3000/user/signup", true)
+    xh.open("POST", "https://hair-automated-ai-interview-system.onrender.com/user/signup", true)
     xh.setRequestHeader('Content-Type', 'application/json')
     xh.send(JSON.stringify(data))
     xh.onload = function () {
@@ -40,7 +40,7 @@ function login() {
         "password": document.getElementById('password').value
     }
     var xh = new XMLHttpRequest();
-    xh.open("POST", "http://localhost:3000/user/login", true)
+    xh.open("POST", "https://hair-automated-ai-interview-system.onrender.com/user/login", true)
     xh.setRequestHeader('Content-Type', 'application/json')
     xh.send(JSON.stringify(data))
     xh.onload = function () {
@@ -62,7 +62,7 @@ function getuser() {
     var jwt = localStorage.getItem('JWT_Token')
     const name= localStorage.getItem('NAME')
     var xh = new XMLHttpRequest();
-    xh.open("GET", "http://localhost:3000/user/login", true)
+    xh.open("GET", "https://hair-automated-ai-interview-system.onrender.com/user/login", true)
     xh.setRequestHeader('Content-Type', 'application/json')
     xh.setRequestHeader('Authorization', jwt)
     xh.send()

@@ -6,7 +6,7 @@ console.log("connected"); // world
 
 window.saveDataAcrossSessions = true
 
-const LOOK_DELAY = 1500 // 1.5 second
+const LOOK_DELAY = 2500 // 1.5 second
 const LEFT_CUTOFF = window.innerWidth / 4
 const RIGHT_CUTOFF = window.innerWidth - window.innerWidth / 4
 
